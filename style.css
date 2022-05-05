@@ -1,0 +1,525 @@
+
+/* body */
+body{
+    font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+	font-size:14px;
+	color:#363636;
+	position:relative;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:500;
+}
+a,button{
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+	outline:none;
+	box-shadow:none;
+	text-decoration:none;
+}
+
+/* Text selection background-color */
+::-moz-selection {
+    background-color: #42BC7F;
+    color: #fff;
+}
+ 
+::selection {
+    background-color: #42BC7F;
+    color: #fff;
+}
+::-moz-selection,
+::selection {
+    background-color: #42BC7F;
+    color: #fff;
+}
+/* social */
+.social-body{
+	position:fixed;
+	top:50%;
+	left:0;
+	margin-top:-80px;
+	z-index:999;
+}
+.social-body ul li{
+	display:block;
+}
+.social-body ul li a{
+	font-size:20px;
+	color:#fff;
+	background:#42bc7f;
+	height: 40px;
+    width: 40px;
+	line-height:40px;
+	text-align:center;
+	display:block;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+.social-body ul li a:hover{
+	width:50px;
+}
+.social-body  ul li.facebook a{
+	background:#425F9C;
+}
+.social-body .ul li.twitter a{
+	background:#1DA1F3;
+}
+.social-body ul li.instagram a {
+	background: #E21B75;
+}
+.social-body ul li.pinterest a{
+	background:#CB2028;
+}
+/* button */
+a:hover{
+	text-decoration:none;
+}
+
+.button .btn {
+	font-weight: 500;
+	font-size: 15px;
+	height: 40px;
+	color: #fff;
+	display: inline-block;
+	line-height: 40px;
+	padding: 0 30px 0 30px;
+}
+
+.section{
+	padding:100px 0;
+}
+
+/*section-title*/
+.section-title {
+	text-align: center;
+}
+.section-title h2 {
+	color:#000;
+	font-size: 44px;
+	text-transform: uppercase;
+	position: relative;
+	font-weight: 700;
+}
+.section-title h2 span {
+	color: #42bc7f;
+}
+/*breadcrumb*/
+.breadcrumb{
+	padding:80px 0px 0px 0px ;
+	margin:0;
+	background-color:#fff;
+	border-top:1px solid #0000001a;
+	border-bottom:1px solid #0000001a;
+	background-size:cover;
+	background-repeat:no-repeat;
+	position:relative;
+}
+.breadcrumb .breadcrumb-text {
+	float: right;
+}
+.breadcrumb .breadcrumb-text h2{
+	color:#42BC7F;
+	text-transform:capitalize;
+	padding-bottom:10px;
+	border-bottom:5px solid #42BC7F;
+}
+/*slicknav_menu*/
+.slicknav_menu{
+	display:none;
+}
+
+#scrollUp {
+	bottom: 15px;
+	right: 15px;
+	padding: 10px 20px;
+	background: #42bc7f;
+	color: #fff;
+	font-size: 25px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	padding: 0;
+	border-radius: 100%;
+}
+#scrollUp:hover{
+	background:#333;
+}
+
+/*=========================
+	Header CSS
+===========================*/
+.header{
+	background:linear-gradient(-154deg,#42bc7f,#3d8963);
+}
+.header .navbar-collapse{
+	padding:0;
+}
+.header .header-inner {
+	background: linear-gradient(-154deg,#42bc7f,#3d8963);
+	-webkit-box-shadow: 0px 0px 5px #000;
+	-moz-box-shadow: 0px 0px 5px #000;
+	box-shadow: 0px 0px 5px #000;
+	z-index: 9000;
+}
+.header .navbar-nav {
+	float: right;
+	margin: 0;
+}
+.header .logo{
+	float:left;
+	padding-top:17px;
+}
+.header .navbar {
+	background: none;
+	box-shadow: none;
+	border: none;
+	margin: 0;
+	min-height: 0px;
+}
+.header .nav li{
+    float: left;
+	position:relative;
+}
+.header .nav li:last-child{
+	margin:0;
+}
+.header .nav li a {
+	color: #d5d5d5;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 25px 15px;
+    position: relative;
+    display: inline-block;
+	box-shadow:none;
+	text-shadow:none;
+}
+.header .nav li:hover a,
+.header .nav li.current a{
+	color:#fff;
+}
+.header .nav li:hover a{
+	color:#fff;
+}
+.header .nav li .dropdown{
+	background: #333;
+    width: 220px;
+    position: absolute;
+    left: 40px;
+    z-index: 99;
+	opacity:0;
+	visibility:hidden;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+.header .nav li:hover .dropdown{
+	opacity:1;
+	visibility:visible;
+	left: 0px;
+}
+.header .nav li .dropdown li{
+	float:none;
+	margin:0;
+}
+.header .nav li .dropdown li a{
+	padding: 10px 15px;
+    color: #fff;
+    display: block;
+}
+.header .nav li .dropdown li i{
+	float:right;
+}
+.header .nav li .dropdown li:hover a{
+	color:#42BC7F;
+}
+.header .nav li .dropdown li a:before{
+	display:none;
+}
+.header .nav li .dropdown .sub-dropdown{
+	position: absolute;
+    top: 0;
+    left: 110%;
+    width: 220px;
+    background: #333;
+	opacity:0;
+	visibility:hidden;
+	transition:all 0.4s ease;
+}
+.header .nav li .dropdown li:hover .sub-dropdown{
+	opacity:1;
+	left:100%;
+	visibility:visible;
+}
+.header .nav li .dropdown .sub-dropdown li:hover a {
+	color:#42BC7F;
+}
+.header .nav li .dropdown .sub-dropdown li a{
+	color:#fff;
+}
+/* Sticky */
+.header .sticky {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	animation: fadeInDown 0.8s both 0s;
+}
+.form-group {
+	text-align: center;
+}
+/*=========================
+	End Header CSS
+===========================*/
+
+/*=========================
+	Slider CSS
+===========================*/
+.slider{
+	position:relative;
+}
+.slider:before{
+	position:absolute;
+	left:0;
+	top:0;
+	content:"";
+	height:100%;
+	width:100%;
+	background:#000;
+	opacity:0.4;
+}
+.slider{
+	height:680px;
+	background-size:cover;
+	background-position:center;
+}
+.slider .text {
+	margin-top: 227px;
+}
+.slider h1 {
+	color: #fff;
+	font-size: 60px;
+	font-weight: 600;
+	margin: 0 0 30px;
+}
+.slider p{
+	color:#fff;
+}
+.slider .button{
+	margin-top:30px;
+}
+.slider .button .btn{
+	margin-right:10px;
+	background:#fff;
+	color:#333;
+	border-radius:0px;
+}
+.slider .button .btn:last-child{
+	margin-right:0px;
+}
+.slider .button .btn i{
+	margin-right:7px;
+}
+.slider .button .btn:hover{
+	color:#fff;
+	background:#42bc7f;
+}
+.slider .button .primary{
+	background:#42bc7f;
+	color:#fff;
+}
+.slider .button .primary:hover{
+	color:#333;
+	background:#fff;
+}
+/*=========================
+	End Slider CSS
+===========================*/
+
+/*=========================
+	About CSS
+===========================*/
+.about{
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.about .single-about p{
+	margin-bottom: 25px;
+	font-size:15px;
+	font-weight:300;
+}
+.about .single-about .cv {
+	z-index:99;
+	margin-top: 40px;
+}
+.about .single-about .cv a {
+	font-weight: 500;
+	font-size: 15px;
+	height: 40px;
+	color: #fff;
+	background:#42BC7F;
+	text-transform:uppercase;
+	display: inline-block;
+	line-height: 40px;
+	padding: 0 30px 0 30px;
+}
+.about .section-title{
+	margin-top:127px;
+}
+.about .single-about .cv a:hover{
+	background:#333;
+}
+.about .image{
+	position:relative;
+}
+.about .image img {
+	width: 100%;
+	box-shadow: 2px 2px 10px #0000002e;
+}
+.about .image .video-popup {
+	color: #fff;
+	background: rgba(66, 188, 127, 0.6);
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 0px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -30px;
+	margin-top: -30px;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	border-radius: 100%;
+	padding-left: 3px;
+	padding-top: 1px;
+}
+.about .image .video-popup:hover{
+	transform:scale(1.1);
+	color:#fff;
+	background:#3339;
+}
+/*=========================
+	End About CSS
+=============================*/
+/*===========================
+	Contact CSS
+=============================*/
+.contact{
+	background:#f5f5f5;
+}
+.contact .section-title h2 {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+.contact .form-head {
+	padding: 50px;
+	box-shadow: 4px 4px 10px #0003;
+	background: #fff;
+}
+.contact .form .form-group{
+	margin-bottom:25px;
+}
+.contact .form .form-group:last-child{
+	margin-bottom:0px;
+}
+.contact .form input{
+	width: 100%;
+    height: 46px;
+    padding-left: 15px;
+	border:1px solid #ccc;
+	text-transform:capitalize;
+}
+.contact .form input:hover,.contact .form input:focus{
+	border-color:#42bc7f;
+}
+.contact .form textarea{
+	width: 100%;
+	height:200px;
+    padding: 15px;
+	border:1px solid #ccc;
+	text-transform:capitalize;
+	/*resize:none;*/
+}
+.contact .form textarea:hover,
+.contact .form textarea:focus{
+	border-color:#42bc7f;
+}
+.contact .contact-info {
+	margin-top: 26px;
+}
+.contact .contact-info h4{
+	color:#42bc7f;
+	font-size:25px;
+	margin-bottom:20px;
+	text-transform:capitalize;
+}
+.contact .contact-info p {
+	color: #777;
+	display: block;
+	margin-bottom: 20px;
+}
+.contact .contact-info span{
+	display:block;
+	color:#777;
+	margin-top:10px;
+}
+.contact .contact-info span i {
+	color: #42bc7f;
+	font-size: 20px;
+	min-width: 32px;
+}
+.contact .contact-info span a:hover{
+	color:#42bc7f;
+}
+.contact .form .btn {
+	background: #42bc7f;
+	color: #fff;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	border-radius: 0px;
+	border-radius: 7px 0px 7px 0px;
+}
+.contact .form .btn i{
+	margin-left:10px;
+}
+.contact .form .btn:hover{
+	background:#555;
+	color:#fff;
+	border-radius: 0px 7px 0px 7px;
+}
+/*===========================
+	End Contact CSS
+=============================*/
+/*===========================
+	Footer CSS
+============================*/
+.footer{
+	padding:0;
+}
+.footer .footer-top{
+	text-align:center;
+	padding:20px 0;
+	background:#232328;
+}
+.footer .logo{
+	margin-bottom:20px;
+}
+.footer .copyright{
+	background:#1d1d21;
+	text-align:center;
+	padding:25px 0;
+}
+.footer .copyright p{
+	color:#666666;
+}
+/*===========================
+	End Footer CSS
+============================*/
