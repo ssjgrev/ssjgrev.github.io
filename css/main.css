@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Roboto:wght@100&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+  color:#fff;
+  text-decoration: none;
+}
+p{
+    font-family: Roboto;
+}
+
+.head { 
+  position:fixed;
+	display: flex;
+  justify-content: center;
+  text-align: center;
+	background-color: #0000006c;
+	color: #fff;
+  font-family: Roboto;
+	height: 5vw;
+  width: 100vw;
+	top: 0px;
+  z-index: 100;
+}
+.head_section {
+	display: flex;
+	align-items: center;
+}
+.head_item {
+	padding: 10px 15px;
+	margin-left: 40px;
+	font-size: 20px;
+	margin-right: 40px;
+}
+.head_item:hover{
+	background-color: #bb6809;
+	border-radius: 20px;
+  transition: 0.8s;
+}
+.button{
+	cursor: pointer;
+}
+.close1 {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  }
+  .close1:hover {
+  opacity: 1;
+  }
+  .close1:before, .close1:after {
+  position: absolute;
+  left: 15px;
+  content: '';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+  }
+  .close1:before {
+  transform: rotate(45deg);
+  }
+  .close1:after {
+  transform: rotate(-45deg);
+  }
+/* слайдерррррррррррррррррррррррррр для данила специально*/
+.container-slider{
+  display: flex;
+  background-image: url(https://oir.mobi/uploads/posts/2021-03/1616539374_36-p-goluboe-nebo-fon-40.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-color: #808080;
+  color: #fff;
+  height: 55vw;
+  padding: 10px;
+  border-bottom: solid black 40px;
+}
+.slider{
+  width: 90%;
+  height: 680px;
+  overflow:hidden;
+  border:1px solid #1b1919;
+}
+.middle{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navigation{
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  height: 8px;
+  width: 30px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #ddd;
+  opacity: .5;
+  border-radius: 10px;
+  transition:all .4s ease;
+}
+.bar:hover{
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+input[name="r"] {
+  position:absolute;
+  visibility:hidden; 
+}
+.slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+.slide{
+  width: 25%;
+  transition: all .6s ease;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -25%;
+}
+#r3:checked ~ .s1{
+  margin-left: -50%;
+}
+#r4:checked ~ .s1{
+  margin-left: -75%;
+}
+/* слайдерррррррррррррррррррррррррр для данила специально*/
+.box_opis{
+	margin-top: auto;
+	text-align: justify;
+	margin-bottom: 7vw;
+    margin-left: 50vw;
+    margin-right: 5vw;
+    font-size: 20px;
+}
+.container-opis{
+    display: flex;
+    background-image: url(https://images11.popmeh.ru/upload/custom/4a0/4a0e78a71072341d30c610a822b86ed2.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-color: #808080;
+    color: #fff;
+    height: 55vw;
+    padding: 10px;
+    border-bottom: solid black 40px;
+}
+
+.box_akb{
+    font-size: 20px;
+    margin-left: 5vw;
+    margin-right: 20vw;
+    margin-bottom: auto;
+    margin-top: 10vw;
+	text-align: justify;
+}
+.container-akb{
+    display: flex;
+    background-image: url(http://live.staticflickr.com/1319/5114475482_9530cfa8d0_k.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-color: #808080;
+    color: #fff;
+    height: 55vw;
+    padding: 10px;
+    border-bottom: solid black 40px;
+}
+.imgakb{
+
+    float: right;
+    height: 500px;
+    width: 500px;
+    margin-right: 7%;
+    margin-top: 10%;
+   
+}
+.container-demon{
+    display: flex;
+    background-image: url(https://images8.alphacoders.com/599/599551.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-color: #808080;
+    color: #fff;
+    height: 55vw;
+    text-align: center;
+    padding: 10px;
+}
+.trikartinki{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    width: 100%;
+}
+
+.trikartinki img{
+    border: 1px solid #55c5e9;  
+    background: #666; /* Цвет фона */
+    text-align: center;
+    margin-top: auto;
+    margin-right: 60px; /* Отступ справа */
+    margin-left: 60px;
+    width: 320px;
+    height: 320px;
+   }
+
+
+   #temn, #temn1, #temn2 {
+    background: rgba(29, 29, 29, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 101;
+  }
+  #okno {
+    width: 540px;
+    height: 460px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid #1b1b1b;
+    border-radius: 10px;
+    color: #202024;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #fff;
+  }
+  #okno1 {
+    width: 540px;
+    height: 700px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid #1b1b1b;
+    border-radius: 10px;
+    color: #202024;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #fff;
+  }
+  #okno2 {
+    width: 540px;
+    height: 250px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid #1b1b1b;
+    border-radius: 10px;
+    color: #202024;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #fff;
+  }
+
+  #temn:target, #temn1:target, #temn2:target {display: block;}
+
+  .box_kont{
+	margin-top: auto;
+    text-align: center;
+    color: #fff;
+	margin-bottom: 7vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+    padding: 8% 15px;
+}
+.container-kont{
+    display: flex;
+    background-image: url(https://images3.alphacoders.com/568/568859.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-color: #808080;
+    color: #fff;
+    height: 55vw;
+    padding: 10px;
+}
+
+.font {
+    font-family: Courier monospace;
+    font-size: 1em;
+
+}
+
+
+
+#footer {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+}
+
+#footer a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#telega {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /*background-color: #000;*/
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #telega a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #god{
+      color: white;
+      text-decoration: none;
+      background-color: black;
+      text-align:right;
+      font-size: 1em;
+      text-align: right;
+
+  }
